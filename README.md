@@ -2,9 +2,12 @@
 Demo to query committed grants of Gates Foundation using streamlit, langchain, llamaIndex, and chat-gpt
 
 Download committed grants from gates foundation
+```
 wget https://www.gatesfoundation.org/-/media/files/bmgf-grants.csv
+```
 
-
+Convert csv to sqlite
+```
 import pandas as pd
 import sqlite3
 
@@ -19,3 +22,4 @@ df.to_sql('grants', conn, if_exists='replace', index=False)
 
 # Close the connection
 conn.close()
+```
