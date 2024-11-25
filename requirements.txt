@@ -1,3 +1,4 @@
+pip
 streamlit
 langchain==0.0.154
 openai==0.28.1
