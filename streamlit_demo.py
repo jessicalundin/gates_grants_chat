@@ -47,10 +47,6 @@ def check_password():
 if not check_password():
     st.stop()  # Do not continue if check_password is not True.
 
-# Setup
-# Get the OpenAI API key from environment variables
-openai.api_key = st.secrets["OPENAI_API_KEY"]
-OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 @st.cache_resource
 def initialize_index(
