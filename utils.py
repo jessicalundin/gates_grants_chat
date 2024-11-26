@@ -17,7 +17,8 @@ def get_sql_index_tool(sql_index, table_context_dict):
 
 def get_llm(llm_name, model_temperature, api_key):
     #os.environ["OPENAI_API_KEY"] = api_key
-    if llm_name == "gpt-3.5-turbo":
+    if llm_name == "o1-preview":#"gpt-3.5-turbo":
+    
         return OpenAI(temperature=model_temperature, model_name=llm_name)
     else:
         return ChatOpenAI(temperature=model_temperature, model_name=llm_name)
