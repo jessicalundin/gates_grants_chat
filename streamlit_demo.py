@@ -101,8 +101,9 @@ st.title("Gates Foundation Grants")
 llama_tab, lc_tab = st.tabs(["Table Agent", "Text Agent"])
 
 api_key = st.secrets['OPENAI_API_KEY']
-llm_name = "gpt-3.5-turbo"
-model_temperature = 0.1
+# llm_name = "gpt-3.5-turbo"
+llm_name = "4o1-preview"
+model_temperature = 0.5
 grants_table_descrp=DEFAULT_GRANTS_TABLE_DESCRP
 table_context_dict = {"grants": grants_table_descrp}
 use_table_descrp = True
