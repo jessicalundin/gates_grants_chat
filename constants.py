@@ -1,8 +1,8 @@
 DEFAULT_SQL_PATH = "sqlite:///gates.sqlite"
 DEFAULT_GRANTS_TABLE_DESCRP = (
-   "This table has fields: ID, grantee, purpose, division, date, duration, amount, website, city, state, country, region, and topic for grants from the Gates Foundation."
+   "This table has fields: GRANT ID, GRANTEE, PURPOSE, DIVISION, DATE COMMITTED, DURATION (MONTHS), AMOUNT COMMITTED, GRANTEE WEBSITE,GRANTEE CITY, GRANTEE STATE, GRANTEE COUNTRY, REGION SERVED,TOPIC for grants from the Gates Foundation."
    "The purpose and topic contain names of diseases such as Malaria, AIDS, Tuberculosis, Cholera, Guinea Worm, COVID, Polio, and HIV. The date is in the format year-month."
-   "The first 4 digits of the date are the year and the last 2 digits are the month."
+   "The DATE COMMITTED has format YYYY-MM."
 )
 
 DEFAULT_LC_TOOL_DESCRP = "Useful for when you want to answer queries about grants funded by the Gates Foundation."
